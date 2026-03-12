@@ -21,6 +21,16 @@ export async function POST(request: Request) {
 
     console.log('📧 Sending email via Resend to:', email)
     console.log('📧 Resend API key configured:', !!process.env.RESEND_API_KEY)
+    console.log('📧 Resend API key value:', process.env.RESEND_API_KEY?.substring(0, 10) + '...')
+
+    // Verificar se a chave do Resend é válida
+    if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 'placeholder-key') {
+      console.error('❌ Invalid Resend API key')
+      return NextResponse.json(
+        { error: 'Email service not configured', isTestMode: true },
+        { status: 500 }
+      )
+    }
 
     // Enviar email
     const data = await resend.emails.send({
