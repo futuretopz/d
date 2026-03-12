@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 import { hashPassword } from '@/lib/auth'
 
+export const dynamic = 'force-dynamic'
+
 // Gerar código de 6 dígitos
 function generateVerificationCode(): string {
   return Math.floor(100000 + Math.random() * 900000).toString()
