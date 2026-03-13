@@ -160,13 +160,12 @@ export function Footer() {
           <div className="flex items-center gap-8">
             {/* Logo */}
             <div className="flex items-center gap-2 opacity-80">
-              <div className="flex items-end gap-0.5">
-                <div className="w-1 h-3 bg-[#FF4532] rounded-sm" />
-                <div className="w-1 h-5 bg-[#FF4532] rounded-sm" />
-                <div className="w-1 h-4 bg-[#FF4532] rounded-sm" />
-                <div className="w-1 h-6 bg-[#FF4532] rounded-sm" />
-                <div className="w-1 h-3 bg-[#FF4532] rounded-sm" />
-              </div>
+              <img 
+                src="/Logo.png" 
+                alt="ZIG" 
+                className="h-8 w-auto"
+                style={{ objectFit: 'contain' }}
+              />
               <span className="text-white font-bold text-lg tracking-wide">ZIG</span>
             </div>
             <span className="text-sm text-white/50">
