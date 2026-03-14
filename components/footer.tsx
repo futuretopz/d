@@ -129,9 +129,6 @@ export function Footer() {
               <a href="https://instagram.com/zigenterprise" target="_blank" rel="noopener noreferrer" className="text-white/60 text-base hover:text-[#FF4532] hover:translate-x-1 transition-all">
                 Instagram
               </a>
-              <a href="https://discord.gg/verified" target="_blank" rel="noopener noreferrer" className="text-white/60 text-base hover:text-[#FF4532] hover:translate-x-1 transition-all">
-                Discord
-              </a>
               <a href="https://www.youtube.com/watch?v=9g0fv0PHygw" target="_blank" rel="noopener noreferrer" className="text-white/60 text-base hover:text-[#FF4532] hover:translate-x-1 transition-all">
                 Youtube
               </a>
